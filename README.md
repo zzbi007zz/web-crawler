@@ -22,7 +22,7 @@ To install the Web Crawler Project, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/web-crawler-project.git
+   git clone https://github.com/yourusername/web-crawler-nodejs.git
    cd web-crawler-project
    ```
 
