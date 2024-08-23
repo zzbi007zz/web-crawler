@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Web Crawler Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple web crawler application with a Node.js backend and React frontend. It allows users to input a URL, crawls the specified website, and displays information about the links found, including thumbnails when available.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Crawl any website by entering its URL
+- Extract links and associated thumbnails from the crawled page
+- Display crawled data in a user-friendly table format
+- Support for partial URL inputs (e.g., "example.com")
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you begin, ensure you have met the following requirements:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v12.0.0 or higher)
+- npm (v6.0.0 or higher)
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To install the Web Crawler Project, follow these steps:
 
-### `npm run build`
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/web-crawler-project.git
+   cd web-crawler-project
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install backend dependencies:
+   ```
+   cd backend
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install frontend dependencies:
+   ```
+   cd ../frontend
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+To use the Web Crawler Project, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Start the backend server:
+   ```
+   cd backend
+   npm start
+   ```
+   The server will start running on `http://localhost:3001`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. In a new terminal, start the frontend development server:
+   ```
+   cd frontend
+   npm start
+   ```
+   The React app will start running on `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Open your web browser and navigate to `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Enter a URL in the input field (e.g., "example.com" or "https://www.example.com") and click "Crawl".
 
-## Learn More
+5. The application will display the crawled data, including links and thumbnails found on the webpage.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+web-crawler-project/
+├── backend/
+│   ├── server.js
+│   └── package.json
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── index.js
+│   └── package.json
+└── README.md
+```
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Backend:
+  - Node.js
+  - Express.js
+  - Axios (for making HTTP requests)
+  - Cheerio (for parsing HTML)
 
-### Analyzing the Bundle Size
+- Frontend:
+  - React
+  - Axios (for making API calls to the backend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Contributions to the Web Crawler Project are welcome. Please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Fork the repository.
+2. Create a new branch: `git checkout -b <branch_name>`.
+3. Make your changes and commit them: `git commit -m '<commit_message>'`
+4. Push to the original branch: `git push origin <project_name>/<location>`
+5. Create the pull request.
 
-### Advanced Configuration
+Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project uses the following license: [MIT License](https://opensource.org/licenses/MIT).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contact
 
-### `npm run build` fails to minify
+If you want to contact me, you can reach me at `<your_email@example.com>`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
+
+- [Cheerio](https://github.com/cheeriojs/cheerio) for HTML parsing
+- [Axios](https://github.com/axios/axios) for HTTP requests
+- [React](https://reactjs.org/) for the frontend framework
